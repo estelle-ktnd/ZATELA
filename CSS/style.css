@@ -37,12 +37,12 @@ h6 {
 
 h1,
 .h1 {
-    font-size: 3.1rem;
+    font-size: 5rem;
 }
 
 h2,
 .h2 {
-    font-size: 2.8rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -460,6 +460,7 @@ section {
     transition: all 1s ease;
 }
 
+
 @media screen and (max-width:749px) {
     .location a {
         font-size: 1.4rem;
@@ -540,7 +541,8 @@ section {
 }
 
 .about .grid__item {
-    margin: 110px auto;
+    max-width: 100%;
+    margin: 60px auto;
     padding: 0;
     text-align: center;
     border: 1px solid #100C0D;
