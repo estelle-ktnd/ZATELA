@@ -327,7 +327,6 @@ section {
     width: 10px;
     margin: 0 2px;
     border: 1px solid white;
-    background-color: none;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.2s ease;
@@ -365,6 +364,11 @@ section {
     background: #F2F2F2;
     padding: 4.5rem;
 
+}
+
+.location .grid {
+    display: flex;
+    justify-content: center;
 }
 
 .location .grid__item {
@@ -537,7 +541,7 @@ section {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
         radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     padding: 0;
-    height: 400px;
+    height: auto;
 }
 
 .about .grid__item {
