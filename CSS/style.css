@@ -584,6 +584,7 @@ section {
     width: 100%;
     padding: 1rem;
     margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form textarea {
