@@ -114,3 +114,23 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+// GalleryShow
+let galleryIndex = 1;
+showGallery(galleryIndex);
+
+// Next/previous controls
+function plusGallery(n) {
+  showGallery(galleryIndex += n);
+}
+
+function showGallery(n) {
+  let i;
+  let gallery = document.getElementsByClassName("gallery");
+  if (n > gallery.length) {galleryIndex = 1} 
+  if (n < 1) {galleryIndex = gallery.length}
+  for (i = 0; i < gallery.length; i++) {
+    gallery[i].style.display = "none"; 
+  }
+  gallery[galleryIndex-1].style.display = "block"; 
+}
